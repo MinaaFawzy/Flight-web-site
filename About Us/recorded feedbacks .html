@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #more {display: none;}
+            body{
+                background-image: url("img.about/planee.jpg");
+            }
+            #div1{
+                width:900px;
+                height:200px;
+                
+                background-color: grey;
+                
+
+            }
+            #div2{
+                width:900px;
+                height:200px;
+                background-color: grey;
+
+            }
+            #div3{
+                width:900px;
+                height:200px;
+                background-color: grey;
+                
+                   
+
+            }
+            #div4{
+                width:900px;
+                height:200px;
+                background-color: grey;
+                
+
+            }
+            #div5{
+                width:900px;
+                height:200px;
+                background-color: grey;
+               
+
+            }
+            #div6{
+                width:900px;
+                height:200px;
+                background-color: grey;
+                
+
+            }
+            h2{
+                font-size: xx-large;
+                margin-left: 15px;
+            }
+            p{
+                font-size: x-large;
+                margin-left:30px;
+            }
+
+
+            </style>
+    </head>
+    <body>
+        <div id="div1">
+            <h2>mina emad:</h2>
+            <p> i loved this site </p>
+
+        </div><br>
+        <div id="div2">
+            <h2>Hesham:</h2>
+            <p>  this site is very useful </p>
+
+
+        </div><br>
+        <div id="div3">
+            <h2>May:</h2>
+            <p>  this site is very very good </p>
+
+
+        </div><br>
+        <span id="dots">...</span><span id="more">
+            
+        <div id="div4">
+            <h2>mina emad:</h2>
+            <p>  loved it  </p>
+
+
+        </div><br>
+        <div id="div5">
+            <h2>Ahmed:</h2>
+            <p>  save my time and my efort  </p>
+
+        </div><br>
+        <div id="div6">
+            <h2>Amr:</h2>
+            <p>  very good  </p>
+
+        </div><br>
+        </span>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+
+                    
+            <script>
+                    function myFunction() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("myBtn");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less"; 
+                        moreText.style.display = "inline";
+                    }
+                    }
+            </script>
+
+    </body>
+</html>

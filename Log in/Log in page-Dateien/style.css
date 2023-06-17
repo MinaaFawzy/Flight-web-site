@@ -1,0 +1,50 @@
+body {
+    background-image: url(airbus.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: time new roman;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hi {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+.box {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 40px 40px;
+    border-radius: 20px;
+}
+
+.box a {
+    text-decoration: none;
+    color: black;
+}
+
+.box a:hover {
+    color: #ddd;
+}
+
+.input input[type="submit"] {
+    background: gray;
+    border-radius: 9px;
+}
+.input #eerror , .input #perror {
+    margin-top :5px;
+    width:150px;
+    font-size:18px;
+    color:#c62828;
+    background:rgba(255,0,0,0.2);
+    display:none;
+}
+
+
+

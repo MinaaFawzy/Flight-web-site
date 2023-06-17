@@ -1,0 +1,59 @@
+
+.list li{
+    float: left;
+    display: inline;}
+
+.list a{
+    display: block;
+    padding: 14px 16px;
+    background-color:#0E0E60;
+    color:orange;
+    text-decoration: none;
+    text-align: center;}
+
+.list a:hover{
+    color: white;
+    
+    
+}
+
+.list ul {
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #0E0E60;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+  
+  
+.list a:active{
+    background: white ;
+}
+ 
+ 
+ .header {
+    
+    text-align: center;
+    color: #0E0E60 ;
+ }
+
+.img {
+ 
+  width: 90%;
+  padding: 70px;
+}
+.editimg{
+    padding: -50px;
+    margin: -50px;
+    border-radius:50px;
+    text-align: center;
+    left: 10px;
+    background-color: #D6D6D6;
+   
+}
+.editimg lux{
+    width: 315px;
+    height: 396px;
+}

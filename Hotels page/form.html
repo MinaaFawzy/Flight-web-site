@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Book Hotels</title>
+    <style>
+
+input[type=text], select {
+  width: 9%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 16.5%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit {
+  width:30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+div {
+  top:50% ;
+  left:50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.Iemail{
+  width: 188%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display:inline-block ;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+}
+    </style>
+    <script>
+        function book() {
+
+            var txt;
+            if (confirm("book complet"))
+            {
+                txt="Your data has been successfully registered";
+            }
+            document.getElementById("book").innerHTML=txt;
+        }
+    </script>
+
+</head>
+<body>
+    <h3 style="text-align:center">Book Your Hotel</h3>
+
+    <div>
+        <form method="post">
+            <div class="form">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label >Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  name="firstname" placeholder="First name.." required>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  name="lastname" placeholder="last name.." required>
+
+            <br />
+            <br />
+            
+           
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> E-Mail</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" placeholder="Guest@example.com" style="width:20%"  required>
+            
+           
+            <br />
+            <br />
+
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<label> Hotel..? </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select style="width:20%" required>
+                <option>                                                  </option>
+                <option>Mandarin Oriental-London     --> UK               </option>
+                <option>Hyatt Regency-Paris          -->France            </option>
+                <option>Mwdia Rotana-Dubai           --> UAE              </option>
+                <option>Rosewood-Jeddah              --> Saudi Arabi      </option>
+                <option>Marriott-Cairo               --> Egypt            </option>
+                <option>Granda Rotana-Sharm Elsheikh --> Egypt            </option>
+                <option>Narcissus-Riyadh             --> Saudi Arabia     </option>
+                <option>Wyndahm-Istanbul             --> Turkey           </option>
+                <option>Shangrila-Maldives           -->Maldives          </option>
+            </select>
+
+            <br />
+            <br />
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> Room Type </label> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select  style="width:20%" required >
+                <option>                                  </option>
+                <option> Standard Room (1 to 2 People)    </option>
+                <option> Family Room (1 to 4 People)      </option>
+                <option> Private Room (1 to 3 People)     </option>
+                <option> Mix Dorm Room (6 People)         </option>
+                <option> Female Dorm Room (6 People)      </option>
+                <option> Male Dorm Room (6 People)        </option>
+            </select>
+             
+            <br />
+            <br />
+
+
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label> Number Of Guests</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number"  name="quantity" min="1" max="100" style="width:17.5%"  required>
+
+            <br />
+            <br />
+
+
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <laabe> Arrival Date </laabe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" min="2000-01-02"  required>
+
+            <br />
+            <br />
+
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <laabe> Departure Date</laabe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" min="2000-01-02"  required>
+
+            <br />
+            <br />
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="submit" type="submit"  onclick="book()"> Submit</button>
+            <p id="book"></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

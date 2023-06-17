@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> chick your email</title>
+		<style> 
+			body{
+				background-image: url("img.forget//mmm.jpg");
+                background-repeat: no-repeat;
+			}
+			#h11{
+				text-align: center;
+				color:black;
+			}
+			#h21{
+				margin-left: 20px;
+				font-style: oblique;
+
+			}
+			#box{
+                    position:relative;
+                    top: 5%;
+                    left: 0%;
+                    padding: 40px;
+                    box-sizing: border-box;
+                    box-shadow: 0 40px 40px;
+                    border-radius: 40px;
+                    width: 800px;
+                    height: 500px;
+                    margin-left: 27%; 
+			}
+			#demo{
+				font-size: larger;
+				font-style: oblique;
+				padding: 2px;
+			}
+			div{
+				width: 900px;
+                    height: 600px;
+                    border: 10px ;
+                    padding: 30px;
+                    margin-left: 7%;
+			}
+			#sub1{
+				height: 30px;
+				width: 100px;
+				font-size: larger;
+			}
+			#txt{
+				height: 300px;
+				width: 600px;
+				font-size: larger;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1 id="h11"> <-- Text You --> </h1>
+		    <br><br>
+			<h2 id="h21"> we send a new password for you  </h2>
+			<div> <p id="demo"> dont forget to give us your feedback about this web site : </p>
+		
+				<form id="box" action="">
+						<p style="font-size: x-large;"> typ your feed back for us :</p>
+					  <textarea  name="message" rows="10" cols="30" id="txt" required>This web site is</textarea>
+					  <br><br>
+					  <button type="button" onclick="myFunction()" id="sub1"> Record</button>
+					  <script>
+						  function myFunction(){
+							  document.getElementById("demo").innerHTML="we record your feedback";
+						  }
+					  </script>
+				</form>
+			 </div>
+	</body>
+
+		
+	
+</html>

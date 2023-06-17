@@ -1,0 +1,35 @@
+$(document).ready(function()
+{
+	$("input.M").click(function()
+	{
+		$("div.lead3").toggle(1500);
+	});
+	$("input.H1").click(function()
+	{
+		$("div.DI1").show(1500);
+	});
+	$("input.H1").click(function()
+	{
+		$("div.demo").show(1500);
+	});
+    $("input.H2").click(function()
+	{
+		$("div.lead3").show(1500);
+	});
+	$("input.H2").click(function()
+	{
+		$("div.DI1").hide(1500);
+	});
+	$("input.H1").click(function()
+	{
+		$("div.lead3").hide(1500);
+	});
+	$("input.H2").click(function()
+	{
+		$("div.demo").hide(1500);
+	});
+	$("input.H2").click(function()
+	{
+		$("div.DI1").hide(1500);
+	});
+});
